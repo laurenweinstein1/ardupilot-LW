@@ -29,8 +29,12 @@ public:
     /// init - initialised the tone alarm
     bool init(void);
 
-    /// update - updates led according to timed_updated.  Should be called at 50Hz
+    /// update - updates led according to timed_updated.  
+    /// Should be called at 50Hz
     void update();
+
+    /// phltones - Lauren: Pixhawk Lite audio
+    void phltones(int); 
 
 private:
     /// play_tune - play one of the pre-defined tunes
@@ -55,6 +59,11 @@ private:
         uint8_t pre_arm_check         : 1;    // 0 = failing checks, 1 = passed
         uint8_t failsafe_radio        : 1;    // 1 if radio failsafe
         uint8_t vehicle_lost          : 1;    // 1 if lost copter tone requested
+        uint8_t compass_cal_running   : 1;    // 1 if compass calibration is running
+        // Lauren: added gps status tracking
+        uint8_t gps_status            : 3;    // 0 = no gps, 1 = no lock, 
+                                              // 2 = 2d lock, 3 = 3d lock, 
+                                              // 4 = dgps lock, 5 = rtk lock
     } flags;
 
     int8_t _cont_tone_playing;
@@ -68,5 +77,6 @@ private:
 
     const static Tone _tones[];
 };
+
 
 #endif // __TONE_ALARM_PX4_H__
