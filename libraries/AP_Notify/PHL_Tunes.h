@@ -54,7 +54,7 @@ char tune_armfail_p[] = "C6 P4 B6 P4 A6";
 char tune_armfail_a[] = "C8 P4 B8 P4 A8";
 
 // prearm ok (passive)
-char tune_prearmok_p[] = "D2 D2 D2 P45 D2 D2 D2";
+char tune_prearmok_p[] = "D2 D2 D2 D2 P45 D2 D2 D2 D2"
 // prearm ok (active)
 char tune_prearmok_a[] = "D2 D2 D2 D2 P45 D2 D2 D2 D2";
 
@@ -84,7 +84,7 @@ char tune_gps_dgps_p[] = "C4 C4 C4 D4";
 char tune_gps_dgps_a[] = "C4 C4 C4 D11";
 
 // gps no lock (passive)
-char tune_gps_nolock_p[] = "D6 C6 B6";
+char tune_gps_nolock_p[] = "B4 A4 P3 B4 A4";
 // gps no lock (active)
 char tune_gps_nolock_a[] = "B4 A4 P2 B4 A4";
 
