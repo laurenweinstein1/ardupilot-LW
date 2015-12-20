@@ -1,10 +1,6 @@
 /// -*- tab-width: 4; Mode: C++; c-basic-offset: 4; indent-tabs-mode: nil -*-
 
-<<<<<<< HEAD
-#define THISFIRMWARE "APM:Copter V3.3.2-rc2-lw-rc1"
-=======
-#define THISFIRMWARE "APM:Copter V3.3.2"
->>>>>>> 2046271da4dfa7cfbcfaab3d38d8b97d94d954fe
+#define THISFIRMWARE "APM:Copter V3.3.2-rc2-lw-rc3"
 #define FIRMWARE_VERSION 3,3,2,FIRMWARE_VERSION_TYPE_OFFICIAL
 
 /*
