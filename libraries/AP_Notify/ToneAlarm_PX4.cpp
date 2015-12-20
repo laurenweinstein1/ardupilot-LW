@@ -455,8 +455,7 @@ void ToneAlarm_PX4::update()
            if (tunestest) { // Play all tones test sequence (for current device mode)
               for (int i = 1; i <= TUNE_LOST; ++i) {
                   phltones(i);
-		  // sleep 5 seconds between tunes (plus 2 end of each tune)
-                  hal.scheduler->delay(5000);
+                  // hal.scheduler->delay(5000); // sleep 5 secs
               }
               return;
             }
